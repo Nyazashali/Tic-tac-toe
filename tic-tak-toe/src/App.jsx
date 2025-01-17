@@ -9,7 +9,7 @@ const App = () => {
   const handleClick = (index) => {
     if (board[index] || winner) return;
     const newBoard = [...board];
-    newBoard[index] = isXNext ? "N" : "Y";
+    newBoard[index] = isXNext ? "X" : "O";
     setBoard(newBoard);
     setIsXNext(!isXNext);
   };
